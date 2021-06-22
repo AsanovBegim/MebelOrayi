@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F6002"
+    tools:context=".ui.SignInActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="@id/gd2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivContainer"
+        android:layout_width="400dp"
+        android:layout_height="388dp"
+        android:layout_marginBottom="95dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidLine3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLine3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_meb_orayi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/gd2"
+
+        />
+
+    <EditText
+        android:id="@+id/etLogin"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:hint="Login"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#102507"
+        app:layout_constraintBottom_toTopOf="@id/etPassword"
+        app:layout_constraintEnd_toEndOf="@id/ivContainer"
+        app:layout_constraintStart_toStartOf="@id/ivContainer"
+        app:layout_constraintTop_toTopOf="@id/ivContainer" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_lock_focused"
+        android:drawablePadding="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:selectAllOnFocus="true"
+        android:textColor="#102507"
+        app:layout_constraintBottom_toBottomOf="@id/ivContainer"
+        app:layout_constraintEnd_toEndOf="@id/ivContainer"
+        app:layout_constraintStart_toStartOf="@id/ivContainer"
+        app:layout_constraintTop_toTopOf="@id/etLogin" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/btnok"
+        app:layout_constraintBottom_toBottomOf="@id/ivContainer"
+        app:layout_constraintEnd_toEndOf="@id/etPassword" />
+
+    <ImageView
+        android:id="@+id/ivRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/registed"
+        app:layout_constraintBottom_toBottomOf="@id/btnOK"
+        app:layout_constraintStart_toStartOf="@id/etPassword"
+        app:layout_constraintTop_toTopOf="@id/btnOK" />
+
+    <ProgressBar
+        android:id="@+id/loadingProgressBar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

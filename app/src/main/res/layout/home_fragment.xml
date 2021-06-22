@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1D1D0"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btnChild"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:background="@drawable/back_item"
+            app:layout_constraintBottom_toTopOf="@id/gdHomeFr1"
+            app:layout_constraintStart_toStartOf="@id/guidLine4"
+            app:layout_constraintTop_toBottomOf="@id/tvMenu"
+            app:layout_constraintVertical_bias="0.494" />
+
+        <ImageView
+            android:id="@+id/icChild1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconic_child"
+            app:layout_constraintBottom_toBottomOf="@id/btnChild"
+            app:layout_constraintEnd_toEndOf="@id/btnChild"
+            app:layout_constraintStart_toStartOf="@id/btnChild"
+            app:layout_constraintTop_toTopOf="@id/btnChild" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Детская\nмебель"
+            android:textColor="#1B1A1A"
+            app:layout_constraintEnd_toEndOf="@id/btnChild"
+            app:layout_constraintStart_toStartOf="@id/guidLine4"
+            app:layout_constraintTop_toBottomOf="@id/btnChild" />
+
+        <ImageView
+            android:id="@+id/btnGuest"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:background="@drawable/back_item"
+            app:layout_constraintBottom_toBottomOf="@id/btnChild"
+            app:layout_constraintStart_toStartOf="@id/guidLine5"
+            app:layout_constraintTop_toTopOf="@id/btnChild" />
+
+        <ImageView
+            android:id="@+id/icGuest1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconic_guest"
+            app:layout_constraintBottom_toBottomOf="@id/btnGuest"
+            app:layout_constraintEnd_toEndOf="@id/btnGuest"
+            app:layout_constraintStart_toStartOf="@id/btnGuest"
+            app:layout_constraintTop_toTopOf="@id/btnGuest" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Гостиная\nмебель"
+            android:textColor="#1B1A1A"
+            app:layout_constraintEnd_toEndOf="@id/btnGuest"
+            app:layout_constraintStart_toStartOf="@id/guidLine5"
+            app:layout_constraintTop_toBottomOf="@id/btnGuest" />
+
+        <ImageView
+            android:id="@+id/btnBedroom"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:background="@drawable/back_item"
+            app:layout_constraintBottom_toBottomOf="@id/btnGuest"
+            app:layout_constraintStart_toStartOf="@id/guidLine6"
+            app:layout_constraintTop_toTopOf="@id/btnGuest" />
+
+        <ImageView
+            android:id="@+id/icBedroom1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconic_bedroom"
+            app:layout_constraintBottom_toBottomOf="@id/btnBedroom"
+            app:layout_constraintEnd_toEndOf="@id/btnBedroom"
+            app:layout_constraintStart_toStartOf="@id/btnBedroom"
+            app:layout_constraintTop_toTopOf="@id/btnBedroom" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Спальная\nмебель"
+            android:textColor="#1B1A1A"
+            app:layout_constraintEnd_toEndOf="@id/btnBedroom"
+            app:layout_constraintStart_toStartOf="@id/guidLine6"
+            app:layout_constraintTop_toBottomOf="@id/btnBedroom" />
+
+        <ImageView
+            android:id="@+id/btnKomplekt"
+            android:layout_width="70dp"
+            android:layout_height="100dp"
+            android:background="@drawable/back_item"
+            app:layout_constraintBottom_toBottomOf="@id/btnBedroom"
+            app:layout_constraintStart_toStartOf="@id/guidLine7"
+            app:layout_constraintTop_toTopOf="@id/btnBedroom" />
+
+        <ImageView
+            android:id="@+id/icKomplekt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/iconic_komplekt"
+            app:layout_constraintBottom_toBottomOf="@id/btnKomplekt"
+            app:layout_constraintEnd_toEndOf="@id/btnKomplekt"
+            app:layout_constraintStart_toStartOf="@id/btnKomplekt"
+            app:layout_constraintTop_toTopOf="@id/btnKomplekt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Столы и\nстулья"
+            android:textColor="#1B1A1A"
+            app:layout_constraintEnd_toEndOf="@id/btnKomplekt"
+            app:layout_constraintStart_toStartOf="@id/guidLine7"
+            app:layout_constraintTop_toBottomOf="@id/btnKomplekt" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidLine3"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.9" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidLine4"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidLine5"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.3" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidLine6"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidLine7"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <TextView
+            android:id="@+id/tvMebel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:text="Мебель Орайы"
+            android:textColor="#1B1A1A"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="@id/guidLine4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Главное Меню"
+            android:textColor="#1B1A1A"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/guidLine4"
+            app:layout_constraintTop_toBottomOf="@id/tvMebel" />
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/ivSearch"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/tvFastFood"-->
+        <!--            app:layout_constraintBottom_toBottomOf="@id/tvFastFood"-->
+        <!--            android:padding="8dp"-->
+        <!--            android:layout_marginEnd="16dp"-->
+        <!--            android:src="@drawable/ic_search"-->
+        <!--            android:layout_width="40dp"-->
+        <!--            android:layout_height="40dp"/>-->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gdHomeFr1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.40" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@id/gd2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/gdHomeFr1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@id/gd2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.90" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+

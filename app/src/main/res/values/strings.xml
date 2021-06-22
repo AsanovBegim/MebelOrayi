@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Мебель Орайы</string>
+    <string name="opisanie">Описание</string>
+    <string name="home">Домой</string>
+    <string name="order">Заказы</string>
+    <string name="profile">Профиль</string>
+    <string name="buy">Buy</string>
+    <string name="zakaz">Количество заказанных вещей :</string>
+    <string name="viZakazali">Вы заказали :</string>
+    <string name="pusto">Тут ничего нет</string>
+</resources>

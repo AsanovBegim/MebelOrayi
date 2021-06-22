@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1D1D0">
+
+    <TextView
+        android:id="@+id/tv_order"
+        android:layout_width="match_parent"
+        android:background="@color/redStroke"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/viZakazali"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="24sp"/>
+
+    <ImageView
+        android:id="@+id/btnBuy"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_store"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:padding="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"/>
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pusto"
+        android:gravity="center"
+        android:textColor="@color/redStroke"
+        android:layout_below="@id/tv_order"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:textSize="25sp"
+        android:layout_marginBottom="85dp"
+        android:layout_alignParentStart="true"/>
+
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/rv_order"
+               android:layout_below="@id/tv_order"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentEnd="true"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_alignParentBottom="true"
+               />
+
+
+
+</RelativeLayout>
